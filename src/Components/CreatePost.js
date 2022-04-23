@@ -64,13 +64,13 @@ function CreatePost() {
     return (
         <>
             <Grid container columnSpacing={5} >
-                <Grid item md={12}>
+                <Grid item md={12} sm={12} xs={12}>
                     <TextField margin="normal" sx={{ fontFamily: 'Readex Pro, sans-serif', width: '100%' }} required id="title" label="Title" name="title" value={post.title} onChange={handleChange} />
                 </Grid>
-                <Grid item md={12}>
+                <Grid item md={12} sm={12} xs={12}>
                     <TextField margin="normal" sx={{ fontFamily: 'Readex Pro, sans-serif', width: '100%' }} required id="userId" label="User Id" name="userId" value={post.userId} onChange={handleChange} />
                 </Grid>
-                <Grid item md={12}>
+                <Grid item md={12} sm={12} xs={12}>
                     <TextField
                         name="body"
                         id="outlined-multiline-static"
@@ -82,7 +82,7 @@ function CreatePost() {
                         rows={14}
                     />
                 </Grid>
-                <Grid item md={12}>
+                <Grid item md={12} sm={12} xs={12}>
                     <Button className='btn' onClick={handleSubmit} sx={{ width: '100%', color: 'white', backgroundColor: '#007AFF', marginTop: '2%', border: '2px solid #007AFF' }}>Submit</Button>
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
