@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes, Outlet, Navigate } from 'react-router-dom';
 import './App.css';
+import BlogsPage from './Pages/BlogsPage'
+import SingleBlogPage from './Pages/SingleBlogPage';
+import PostsPage from './Pages/PostsPage';
+import SinglePostPage from './Pages/SinglePostPage';
+import CreatePostPage from './Pages/CreatePostPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<PostsPage />} />
+          <Route exact path='/postdetails' element={<SinglePostPage />} />
+          <Route exact path='/createpost' element={<CreatePostPage />} />
+          <Route exact path='/myblog' element={<BlogsPage />} />
+          <Route exact path='/myblogdetails' element={<SingleBlogPage />} />
+
+        </Routes>
+      </Router>
+    </>
   );
 }
 

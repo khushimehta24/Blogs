@@ -1,0 +1,32 @@
+.css-6od3lo-MuiChip-label:before {
+    content:  created at ;
+    display: flex;
+}
+
+.css-1ir3j4u-MuiButtonBase-root-MuiFab-root {
+    color: rgb(255 255 255 / 87%) !important;
+    background-color: #1976d2 !important;
+}
+
+.link{
+    text-decoration: none !important;
+    font-size: 10px !important;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+.link:hover{
+    background-color: #1976d215;
+}
+
+.blogsContainer{
+    display: flex !important;
+    background-color:  white  !important;
+    border-radius:  4px  !important; 
+    height:  100%  !important; 
+    flex-direction:  column  !important; 
+    justify-content:  space-between  !important; 
+    padding:  4px  !important; 
+    align-items:  space-between  !important;
+}
