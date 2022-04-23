@@ -5,7 +5,7 @@ import React from 'react'
 function Card2({ user }) {
     return (
         <>
-            <Grid container>
+            <Grid container sx={{ marginTop: { md: '0px', sm: '4%', xs: '4%' } }}>
                 <Grid item sx={{ width: '100%' }}>
                     <Card style={{ backgroundColor: 'white', padding: '15px', borderRadius: '7px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <Box>
