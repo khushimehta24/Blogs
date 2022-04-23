@@ -14,8 +14,6 @@ function App() {
           <Route exact path='/' element={<PostsPage />} />
           <Route exact path='/postdetails' element={<SinglePostPage />} />
           <Route exact path='/createpost' element={<CreatePostPage />} />
-          <Route exact path='/myblog' element={<BlogsPage />} />
-          <Route exact path='/myblogdetails' element={<SingleBlogPage />} />
 
         </Routes>
       </Router>

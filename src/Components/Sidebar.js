@@ -69,21 +69,21 @@ function ResponsiveDrawer(props) {
                 </ListItem>
             </List>
             <Divider />
-            <List>
-                <ListItem button >
+            {/* <List>
+                <ListItem button onClick={() => navigate('/myblog')}>
                     <ListItemIcon>
                         <CalendarMonthIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Blogs" onClick={() => navigate('/myblog')} />
+                    <ListItemText primary="Blogs"  />
                 </ListItem>
-            </List>
+            </List> */}
             <Divider />
             <List>
-                <ListItem button >
+                <ListItem button onClick={() => navigate('/createpost')} >
                     <ListItemIcon>
                         <AddIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Create Post" onClick={() => navigate('/createpost')} />
+                    <ListItemText primary="Create Post" />
                 </ListItem>
             </List>
         </div>
