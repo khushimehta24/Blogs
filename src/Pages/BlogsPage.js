@@ -2,11 +2,11 @@ import React from 'react'
 import Blogs from '../Components/Blogs'
 import Sidebar from '../Components/Sidebar'
 
-function BlogsPage() {
+function BlogsPage({ data }) {
     return (
         <>
             <Sidebar>
-                <Blogs />
+                <Blogs data={data} />
             </Sidebar>
         </>
     )

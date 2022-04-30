@@ -10,13 +10,13 @@ import AddBlogs from './AddBlogs';
 import { Link } from "react-router-dom";
 
 
-function Blogs() {
-    const [totalBlogs, setTotalBlogs] = useState([])
-    let BlogsData = JSON.parse(localStorage.getItem('Blogs'))
-
-    // console.log(BlogsData)
-    console.log(totalBlogs)
-
+function Blogs({ data }) {
+    const [totalBlogs, setTotalBlogs] = useState(data)
+    const [BlogsData, setBlogsData] = useState([])
+    useEffect(() => {
+        setBlogsData(JSON.parse(localStorage.getItem('Blogs')) ? JSON.parse(localStorage.getItem('Blogs')) : [])
+        // localStorage.setItem('Blogs', totalBlogs)
+    }, [BlogsData])
 
     const [openPopup, setOpenPopup] = useState(false);
 

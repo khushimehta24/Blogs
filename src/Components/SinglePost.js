@@ -35,7 +35,6 @@ function SinglePost() {
                 console.log(error);
             });
     }, [])
-    console.log(comments);
 
     return (<>
         <Grid container columns={12} sx={{ width: '100%', marginTop: '3%' }}>

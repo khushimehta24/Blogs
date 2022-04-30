@@ -33,7 +33,6 @@ function CreatePost() {
 
         axios(config)
             .then(function (response) {
-                console.log(response.data);
                 setPost({ title: '', body: '', userId: '' })
                 setOpen(true);
             })

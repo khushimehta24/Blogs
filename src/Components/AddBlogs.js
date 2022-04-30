@@ -5,7 +5,6 @@ import '../Assets/AddBlogs.css'
 function AddBlogs(props) {
     const [blog, setBlog] = useState({ image: '', blogName: '', desc: '', content: '', name: '' })
     const { BlogsData, totalBlogs, setTotalBlogs, openPopup, setOpenPopup } = props;
-    console.log(BlogsData)
 
     const handleChange = (e) => {
         const name = e.target.name
@@ -20,7 +19,6 @@ function AddBlogs(props) {
         setBlog({ image: '', blogName: '', desc: '', content: '', name: '' })
         localStorage.setItem('Blogs', JSON.stringify(totalBlogs))
     }
-    console.log(totalBlogs)
 
     return (
         <>

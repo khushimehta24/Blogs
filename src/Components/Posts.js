@@ -21,7 +21,6 @@ function Posts() {
                 console.log(error);
             });
     }, [])
-    console.log(data);
     return (
         <>
             <Grid container spacing={4}>

@@ -9,7 +9,6 @@ function SingleBlog() {
     const id = location.state.id;
     const BlogsData = location.state.BlogsData;
     const search = BlogsData.filter((blogClicked) => blogClicked.id === id);
-    console.log(search[0].image)
     return (
         <>
             <Grid>
